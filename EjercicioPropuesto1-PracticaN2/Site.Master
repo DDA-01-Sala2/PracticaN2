@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EjercicioPropuesto1_PracticaN2.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta de Electrodomesticos</title>
+        
+    </head>
+    <body>
+        <form id="Form1" runat="server" method="POST" style="background-color: #99FFCC">
+            <div style="background-color: #FFFF99">
+
+                <h1 style="font-family: Broadway; background-color: #FFFF00; height: 60px;">Venta de Electrodomesticos </h1>
+
+                Elija su Producto: &nbsp;                <select id="Productos" runat="server"/>
+                <br/><br/>
+                <input type="submit" id="Descripcio" runat="server" value="Aceptar"  OnServerClick ="Descripcion_ServerClick" />                                               
+                <br/>
+                <div style="font-weight:bold" id="Codigex" runat="server"></div>&nbsp;
+                <div style="font-weight:bold" id="Nombre" runat="server"></div>&nbsp;
+                <div style="font-weight:bold" id="Descripcion" runat="server"></div>&nbsp;
+                <div style="font-weight:bold" id="Marca" runat="server"></div>&nbsp;
+                <div style="font-weight:bold" id="Precio" runat="server"></div>&nbsp;
+                <br/><br/>
+
+                <input type="submit" id="MostrarGrafico" runat="server" value="Ver Imagenes" OnServerClick ="MostrarGrafico_ServerClick" />
+                
+                <br /><br />
+
+                <img id="Grafico" runat="server" />
+                <div style="font-weight:bold" id="Codigo" runat="server"></div>&nbsp;
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
